@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+    <meta>
+        <name>NINJAConversionHeader</name>
+        <label>Conversion Header</label>
+        <label lang="de-DE">Conversion Header</label>
+        <description>Displays text at the top of your page.</description>
+        <description lang="de-DE">Zeigt Informationen am oberen Bildschirmrand deiner Seite an.</description>
+        <author>Joschi Mehta</author>
+        <copyright>(c) by Ninja Army</copyright>
+        <version>1.0.0</version>
+        <license>MIT</license>
+        <icon>Resources/config/plugin.png</icon>
+    </meta>
+</manifest>

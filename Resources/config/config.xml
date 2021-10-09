@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+	<card>
+		<title>Configuration for Desktop and tablet</title>
+		<title lang="de-DE">Einstellung für Desktop und Tablet</title>
+
+        <input-field type="colorpicker">
+            <name>headerBarColor</name>
+            <label>Background Color of the bar</label>
+            <label lang="de-DE">Hintergrundfarbe der Leiste</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>headerBarHeight</name>
+            <label>Height of the bar in px</label>
+            <label lang="de-DE">Höhe der Leiste in px</label>
+            <placeholder>50</placeholder>
+            <helpText>Please set a height of your bar with a normal number for example 50. If you don't you bar is not visible.</helpText>
+			<helpText lang="de-DE">Bitte definieren Sie die Höhe der Leiste mit einer einfachen Zahl z.B. 50. Falls Sie keine Höhe definieren ist Ihre Leiste nicht sichtbar.</helpText>
+        </input-field>
+
+		<input-field type="text">
+            <name>firstText</name>
+            <label>First text in your conversion header</label>
+            <label lang="de-DE">Erster Text in der Leiste</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>secondText</name>
+            <label>Second text in your conversion header</label>
+            <label lang="de-DE">Zweiter Text in der Leiste</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>thirdText</name>
+            <label>Third text in your conversion header</label>
+            <label lang="de-DE">Dritter Text in der Leiste</label>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>textColor</name>
+            <label>Text Color</label>
+            <label lang="de-DE">Textfarbe</label>
+            <helpText>This will define the text color of all texts in your conversion header.</helpText>
+			<helpText lang="de-DE">Hier können Sie die Textfarbe für alle Text in Ihrem Conversion Header auswählen.</helpText>
+        </input-field>
+	</card>
+
+
+    <card>
+		<title>Configuration on phones</title>
+		<title lang="de-DE">Einstellung auf Handys </title>
+        
+         <input-field type="bool">
+            <name>hideOnMobile</name>
+            <label>Hide bar on phones?</label>
+            <label lang="de-DE">Leiste am Handy ausblenden?</label>
+            <helpText>This will completely hide your bar on phones.</helpText>
+			<helpText lang="de-DE">Diese Eigenschaft wird die Leiste auf Handys komplett ausblenden.</helpText>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>headerColorPhone</name>
+            <label>Background Color on the phone</label>
+            <label lang="de-DE">Hintergrundfarbe auf dem Handy</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>headerPhoneHeight</name>
+            <label>Height in px on the phone</label>
+            <label lang="de-DE">Höhe in px auf dem Handy</label>
+            <placeholder>50</placeholder>
+             <helpText>Please set a height of your bar with a normal number for example 50. If you don't you bar is not visible.</helpText>
+			<helpText lang="de-DE">Bitte definieren Sie die Höhe der Leiste mit einer einfachen Zahl z.B. 50. Falls Sie keine Höhe definieren ist Ihre Leiste nicht sichtbar.</helpText>
+        </input-field>
+
+		<input-field type="text">
+            <name>phoneText</name>
+            <label>Text on phone</label>
+            <label lang="de-DE">Text auf dem Handy</label>
+        </input-field>
+
+         <input-field type="colorpicker">
+            <name>phoneTextColor</name>
+            <label>Text color on the phone</label>
+            <label lang="de-DE">Textfarbe auf dem Handy</label>
+        </input-field>
+
+	</card>
+
+</config>

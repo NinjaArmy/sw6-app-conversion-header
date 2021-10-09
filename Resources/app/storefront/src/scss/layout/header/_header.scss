@@ -1,0 +1,29 @@
+.ninja-conversion-header {
+    display: none;
+}
+
+.ninja-conversion-header-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    p {
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .ninja-conversion-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        p {
+            margin: 0;
+        }
+    }
+
+    .ninja-conversion-header-mobile {
+        display: none;
+    }
+  }

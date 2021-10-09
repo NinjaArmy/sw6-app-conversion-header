@@ -1,0 +1,39 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+{% block base_header_inner %}
+	{% set backgroundColor = config('NINJAConversionHeader.config.headerBarColor') %}
+	{% set height = config('NINJAConversionHeader.config.headerBarHeight') %}
+	{% set firstText = config('NINJAConversionHeader.config.firstText') %}
+	{% set secondText = config('NINJAConversionHeader.config.secondText') %}
+	{% set thirdText = config('NINJAConversionHeader.config.thirdText') %}
+	{% set textColor = config('NINJAConversionHeader.config.textColor') %}
+
+	<div class="ninja-conversion-header" style="background-color: {{backgroundColor}}; color: {{textColor}}; height: {{height}}px;">
+		{% if firstText is not empty %}
+			<p>{{firstText}}</p>
+		{% endif %}
+
+		{% if secondText is not empty %}
+			<p>{{secondText}}</p>
+		{% endif %}
+
+		{% if secondText is not empty %}
+			<p>{{thirdText}}</p>
+		{% endif %}
+	</div>
+
+
+	{% set phoneColor = config('NINJAConversionHeader.config.headerColorPhone') %}
+	{% set phoneHeight = config('NINJAConversionHeader.config.headerPhoneHeight') %}
+	{% set phoneText = config('NINJAConversionHeader.config.phoneText') %}
+	{% set phoneTextColor = config('NINJAConversionHeader.config.phoneTextColor') %}
+
+	{% if not config('NINJAConversionHeader.config.hideOnMobile') %}
+		<div class="ninja-conversion-header-mobile" style="background-color: {{phoneColor}}; color: {{phoneTextColor}}; height: {{phoneHeight}}px;">
+			{% if phoneText is not empty %}
+				<p>{{phoneText}}</p>
+			{% endif %}
+		</div>
+	{% endif %}
+
+	{{parent()}}
+{% endblock %}
