@@ -8,7 +8,7 @@
         <description lang="de-DE">Zeigt Informationen am oberen Bildschirmrand deiner Seite an.</description>
         <author>Joschi Mehta</author>
         <copyright>(c) by Ninja Army</copyright>
-        <version>3.0.0</version>
+        <version>4.0.0</version>
         <license>MIT</license>
         <icon>Resources/config/plugin.png</icon>
     </meta>
